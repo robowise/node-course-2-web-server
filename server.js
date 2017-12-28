@@ -58,6 +58,7 @@ app.get('/about', (req, res) => {
         });
 });
 
+
 app.get('/', (req, res) => {
     res.render('home.hbs', {
     pageTitle : 'The Home Page',
@@ -65,6 +66,14 @@ app.get('/', (req, res) => {
     });
 });
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+    pageTitle : 'This is the PR@JeTS Page',
+    welcome : 'My portfolio shows you this video for enjoyment.',
+    });
+});
 
 // localhost 8080 using the following public link
 // http://weather-app.roboserve.c9users.io/
+
+//https://polar-sea-83353.herokuapp.com/
